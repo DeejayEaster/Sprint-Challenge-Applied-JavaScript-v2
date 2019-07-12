@@ -21,7 +21,9 @@ function Header() {
   temp.classList.add("temp");
 
   // content
-
+  date.textContent = `SMARCH 28, 2019`;
+  title.textContent = `Lambda Times`;
+  temp.textContent = `98°`;
   // struccture
   header.appendChild(date);
   header.appendChild(title);
