@@ -9,6 +9,9 @@
 //  </div >
 // And add it to the DOM in the .headerContainer component
 // here we go
+const headerContainer = document.querySelector(".header-container");
+Header();
+
 function Header() {
   const header = document.createElement("div");
   const date = document.createElement("span");
@@ -25,7 +28,10 @@ function Header() {
   title.textContent = `Lambda Times`;
   temp.textContent = `98°`;
   // struccture
+  headerContainer.appendChild(header);
   header.appendChild(date);
   header.appendChild(title);
   header.appendChild(temp);
+
+  return header;
 }
