@@ -299,7 +299,12 @@ body {
   right: 25px;
   transform: translate(0, -50%);
 }
-.carousel img {
+.carousel .img-hide {
+  width: 0%;
+  visibility: hidden;
+}
+.carousel .img-show {
   width: 100%;
-  display: none;
+  visibility: visible;
+  z-index: -1;
 }

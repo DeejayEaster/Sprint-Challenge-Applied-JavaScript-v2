@@ -23,7 +23,6 @@ const cardInfo = axios.get(
 const cardContainer = document.querySelector(".cards-container");
 
 cardInfo.then(info => {
-  console.log(`this is the info: `, info);
   const articleData = info.data.articles;
   articleData.bootstrap.forEach(obj => {
     const newCard = cardMaker(obj);
